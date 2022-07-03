@@ -1,5 +1,5 @@
 {
-  "name": "angular-named-outlet-candeactivate-bug-repo",
+  "name": "angular-named-outlet-candeactivate-bug-repro",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
