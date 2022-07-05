@@ -3,14 +3,15 @@ import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot, UrlTree } f
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CanDeactivateGuard implements CanDeactivate<unknown> {
   canDeactivate(
     component: unknown,
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
-    nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    nextState?: RouterStateSnapshot,
+  ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     console.log(component);
     return true;
   }

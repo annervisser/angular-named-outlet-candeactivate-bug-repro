@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <div class="inner-wrapper">
       <router-outlet name="inner"></router-outlet>
     </div>
-    <a [routerLink]="['', { outlets: { inner: ['one'] } }]"><button>ONE</button></a>
-    <a [routerLink]="['', { outlets: { inner: ['two'] } }]"><button>TWO</button></a>
+    <a routerLink="/one"><button>ONE</button></a>
+    <a routerLink="/two"><button>TWO</button></a>
   `,
   styles: [
   ]

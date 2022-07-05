@@ -9,19 +9,28 @@ const routes: Routes = [
   {
     path: '',
     component: OuterComponent,
-    // canDeactivate: [CanDeactivateGuard],
     children: [
       {
         path: 'one',
-        outlet: 'inner',
-        component: Inner1Component,
-        canDeactivate: [CanDeactivateGuard]
+        children: [
+          {
+            path: '',
+            outlet: 'inner',
+            component: Inner1Component,
+            canDeactivate: [CanDeactivateGuard],
+          }
+        ]
       },
       {
         path: 'two',
-        outlet: 'inner',
-        component: Inner2Component,
-        canDeactivate: [CanDeactivateGuard]
+        children: [
+          {
+            path: '',
+            outlet: 'inner',
+            component: Inner2Component,
+            canDeactivate: [CanDeactivateGuard]
+          },
+        ]
       },
     ]
   },
