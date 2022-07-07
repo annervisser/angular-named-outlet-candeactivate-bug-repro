@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
-This is a reproduction for this issue:
+This is a reproduction for this issue: https://github.com/angular/angular/issues/34614
 
 ## Setup
 - Named outlet inside of the normal router-outlet
